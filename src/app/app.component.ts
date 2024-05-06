@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
+import { PsLandingComponent } from './pages/ps-landing/ps-landing.component';
+import { Title } from '@angular/platform-browser';
+import { PsFooterComponent } from './ps-footer/ps-footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, PsLandingComponent, PsFooterComponent, RouterLink],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'psiquepaApp';
+  title = 'Psiquepa | Inicio';
 }
